@@ -10970,3 +10970,23 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* 電腦版：啟動文繞圖 */
+@media (min-width: 768px) {
+    .wrap-img {
+        float: right;         /* 圖片靠右，文字繞在左邊（若想靠左可改 left） */
+        width: 400px;         /* 保持您原本設定的 400px 寬度 */
+        margin-left: 30px;    /* 留白，防止文字貼著圖片左邊 */
+        margin-bottom: 20px;  /* 留白，防止下方的文字貼著圖片 */
+    }
+}
+
+/* 手機版：取消文繞圖，改為圖片滿版或置中，閱讀體驗較佳 */
+@media (max-width: 767.98px) {
+    .wrap-img {
+        display: block;
+        width: 100%;          /* 手機上圖片自動填滿寬度 */
+        max-width: 400px;     /* 但不超過原本的 400px */
+        margin: 0 auto 20px auto; /* 居中並留底邊距離 */
+    }
+}
