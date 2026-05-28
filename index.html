@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -171,11 +173,11 @@
                             <h3 class="mb-0">第一部分：網路類型、拓樸與硬體設備</h3><br>
                             <div class="subheading mb-3">1. 網路類型（依地理範圍區分）</div>
                             <p>
-                                區域網路 (LAN)： 範圍 $10 \text{ 公里}$ 內。組織、企業內部專用。<br><br>
+                                區域網路 (LAN)： 範圍 \(10 \text{ 公里}\) 內。組織、企業內部專用。<br><br>
 
-                                都會網路 (MAN)： 範圍 $50 \text{ 公里}$ 內。由數個 LAN 相連而成，例如：有線電視網路。<br><br>
+                                都會網路 (MAN)： 範圍 \(50 \text{ 公里}\) 內。由數個 LAN 相連而成，例如：有線電視網路。<br><br>
 
-                                廣域網路 (WAN)： 範圍 $50 \text{ 公里}$ 以上。橫跨城市與國家，例如：臺灣學術網路 (TANet)（於民國 79 年 / 1990 年建立，為台灣科技教育打下深厚物理基礎）。<br><br>
+                                廣域網路 (WAN)： 範圍 \(50 \text{ 公里}\) 以上。橫跨城市與國家，例如：臺灣學術網路 (TANet)（於民國 79 年 / 1990 年建立，為台灣科技教育打下深厚物理基礎）。<br><br>
                             </p>
                             <div class="subheading mb-3">2. 區域網路拓樸架構</div>
                             <p>
@@ -187,7 +189,7 @@
                             </p>
                             <div class="subheading mb-3">3. 網路硬體設備核心功能</div>
                             <p>
-                                網路介面卡 (NIC)： 負責平行與串列資料轉換。每張卡有全球唯一的 MAC 位址（$6 \text{ Bytes}$ / $48 \text{ bits}$，十六進位）。（Windows CMD 查詢指令：ipconfig /all）<br><br>
+                                網路介面卡 (NIC)： 負責平行與串列資料轉換。每張卡有全球唯一的 MAC 位址（\(6 \text{ Bytes}\) / \(48 \text{ bits}\)，十六進位）。（Windows CMD 查詢指令：ipconfig /all）<br><br>
 
                                 中繼器 (Repeater)： 強化衰減的訊號。<br><br>
 
@@ -205,7 +207,7 @@
                             <h3 class="mb-0">第二部分：網路計量與無線通訊技術</h3><br>
                             <div class="subheading mb-3">1. 網路速度與檔案大小換算</div>
                             <p>
-                                核心關鍵： 區分 Bit (位元) 與 Byte (位元組)。公式：$$1 \text{ Byte} = 8 \text{ bits}$$<br><br>
+                                核心關鍵： 區分 Bit (位元) 與 Byte (位元組)。公式\(1 \text{ Byte} = 8 \text{ bits}\)<br><br>
 
                                 Mbps： 傳輸速度單位（Megabits per second），指每秒傳輸多少「位元」。<br><br>
 
@@ -213,19 +215,19 @@
 
                                 實戰計算範例：<br>
 
-                                $5\text{MB}$ 歌曲在 $10\text{Mbps}$ 網速下：$5 \times 8 = 40\text{ Mb} \rightarrow 40 / 10 =$ $4 \text{ 秒}$<br><br>
+                               \(5\text{MB}\) 歌曲在\(10 \text{Mbps}\) 網速下\(5 \times 8 = 40\text{ Mb} \rightarrow 40 / 10 =\)\(4 \text{ 秒}\)<br><br>
 
-                                $1\text{GB}$ 影片在 $100\text{Mbps}$ 網速下：$1024 \times 8 = 8192\text{ Mb} \rightarrow 8192 / 100 \approx$ $82 \text{ 秒}$<br><br>
+                               \(1\text{GB}\) 影片在\( 100\text{Mbps}\) 網速下\(1024 \times 8 = 8192\text{ Mb} \rightarrow 8192 / 100 \approx\)\(82 \text{ 秒}\)<br><br>
                             </p>
                             <div class="subheading mb-3">2. 無線網路四層級分類</div>
                             <p>
-                                無線廣域網路 (WWAN)： 跨城市、跨國。核心為蜂巢式網路 (Cellular Network)，基地台訊號覆蓋呈「六邊形」以確保移動不斷線。演進：3G (HSPA) $\rightarrow$ 4G (LTE/LTE-A) $\rightarrow$ 5G (NR)。組成包含：移動站、基地台子系統、網路子系統。<br><br>
+                                無線廣域網路 (WWAN)： 跨城市、跨國。核心為蜂巢式網路 (Cellular Network)，基地台訊號覆蓋呈「六邊形」以確保移動不斷線。演進：3G (HSPA)\(\rightarrow\) 4G (LTE/LTE-A) \(\rightarrow\) 5G (NR)。組成包含：移動站、基地台子系統、網路子系統。<br><br>
 
                                 無線都會網路 (WMAN)： 整個城鎮。標準為 IEEE 802.16 (WiMAX)。<br><br>
 
                                 無線區域網路 (WLAN)： 辦公室、校園或住家。核心為 Wi-Fi (IEEE 802.11 系列)。<br><br>
 
-                                Wi-Fi Direct： 點對點連接技術，不需透過路由器即可互傳，速度高達 $250\text{Mbps}$。<br><br>
+                                Wi-Fi Direct： 點對點連接技術，不需透過路由器即可互傳，速度高達\(250\text{Mbps}\)。<br><br>
 
                                 無線個人網路 (WPAN)： 個人週邊數公尺內。<br><br>
 
@@ -245,7 +247,7 @@
 
                                 被動式 (Passive)： 無電池，靠讀取器的電磁波感應供電（如超商標籤）。<br><br>
 
-                                NFC (近場通訊)： 從 RFID 演進的特化技術。距離極短（$< 10\text{cm}$），安全性高。<br><br>
+                                NFC (近場通訊)： 從 RFID 演進的特化技術。距離極短（\(< 10\text{cm}\)），安全性高。<br><br>
 
                                 三種操作模式： 卡片模擬（手機當悠遊卡/信用卡）、讀寫模式（讀取標籤）、點對點模式（兩台設備交換資料）。<br><br>
                             </p>
@@ -269,9 +271,9 @@
                             </p>
                             <div class="subheading mb-3">2. IP 位址管理架構</div>
                             <p>
-                                核心對比： MAC 位址是身分證字號（$48 \text{ bits}$，出廠固化全球唯一）；IP 位址是通訊住址（隨環境改變）。<br><br>
+                                核心對比： MAC 位址是身分證字號（\(48 \text{ bits}\)，出廠固化全球唯一）；IP 位址是通訊住址（隨環境改變）。<br><br>
 
-                                IPv4 結構與五大分級： 長度 $32\text{ bits}$。由網路位址 (Network ID) 與主機位址 (Host ID) 組成。系統將 IP 與子網路遮罩進行 AND 邏輯運算 即可得出網路位址。<br><br>
+                                IPv4 結構與五大分級： 長度 \(32\text{ bits}\)。由網路位址 (Network ID) 與主機位址 (Host ID) 組成。系統將 IP 與子網路遮罩進行 AND 邏輯運算 即可得出網路位址。<br><br>
 
                                 Class A： 1 ~ 126（遮罩 255.0.0.0）。適用國家級、超大型組織。<br><br>
 
@@ -285,7 +287,7 @@
 
                                 特別備註： 127.0.0.1 (Loopback 環回位址) 用於與「自己電腦」通訊測試，不暴露於公網。<br><br>
 
-                                IPv6 規範： 長度 $128\text{ bits}$ 十六進位（8組，冒號隔開）。<br><br>
+                                IPv6 規範： 長度 \(128\text{ bits}\) 十六進位（8組，冒號隔開）。<br><br>
 
                                 縮寫規則： 可省略前導零；連續全零群組可用雙冒號 :: 取代（單一位址限用一次）。<br><br>
 
@@ -293,7 +295,7 @@
                             </p>
                             <div class="subheading mb-3">3. 網域名稱系統 (DNS) 與 URL 架構</div>
                             <p>
-                                DNS： 採樹狀管理階層結構，將人類易記的域名轉為電腦識別的 IP（如：www.ntu.edu.tw $\rightarrow$ 主機名 + 機構名 + 類別名 + 國家碼）。<br><br>
+                                DNS： 採樹狀管理階層結構，將人類易記的域名轉為電腦識別的 IP（如：www.ntu.edu.tw \(\rightarrow\) 主機名 + 機構名 + 類別名 + 國家碼）。<br><br>
 
                                 URL 標準格式： 通訊協定://主機網址[:連接埠]/路徑/檔名<br><br>
 
